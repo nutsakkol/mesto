@@ -9,3 +9,13 @@
 @import url(../blocks/profile/__name/profile__name.css);
 @import url(../blocks/profile/__subtitle/profile__subtitle.css);
 @import url(../blocks/profile/__edit-button/profile__edit-button.css);
+@import url(../blocks/profile/__add-button/profile__add-button.css);
+@import url(../blocks/profile/__add-icon/profile__add-icon.css);
+@import url(../blocks/profile/__edit-icon/profile__edit-icon.css);
+@import url(../blocks/galery/galery.css);
+@import url(../blocks/galery/__element/galery__element.css);
+@import url(../blocks/galery/__image/galery__image.css);
+@import url(../blocks/galery/__title/galery__title.css);
+@import url(../blocks/galery/__like-button/galery__like-button.css);
+@import url(../blocks/galery/__like-icon/galery__like-icon.css);
+@import url(../blocks/galery/__subtitle/galery__subtitle.css);
