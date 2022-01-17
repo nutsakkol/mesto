@@ -19,3 +19,5 @@
 @import url(../blocks/galery/__like-button/galery__like-button.css);
 @import url(../blocks/galery/__like-icon/galery__like-icon.css);
 @import url(../blocks/galery/__subtitle/galery__subtitle.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
