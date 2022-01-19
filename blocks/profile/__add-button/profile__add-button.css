@@ -1,7 +1,7 @@
 .profile__add-button {
   max-width: 150px;
   border: 2px solid #ffffff;
-  background: #000000;
+  background: none;
   border-radius: 2px;
   align-self: center;
   margin-left: auto;
