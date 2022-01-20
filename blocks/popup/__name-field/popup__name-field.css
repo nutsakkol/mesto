@@ -5,4 +5,9 @@
   opacity: 0.2;
   border: none;
   border-bottom: 1px solid #000000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
 }
