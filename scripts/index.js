@@ -14,28 +14,17 @@ function popupClose() {
 profileEditButton.addEventListener("click", popupOpen);
 popupCloseButton.addEventListener("click", popupClose);
 
-
 let formElement = document.querySelector(".popup__container");
 let nameInput = document.querySelector(".popup__name-field");
 let jobInput = document.querySelector(".popup__job-field");
-let nameField = document.getElementById("name");
-let jobField = document.getElementById("about");
+let nameField = document.querySelector(".profile__name");
+let jobField = document.querySelector(".profile__subtitle");
 
 function formSubmitHandler (evt) {
 	evt.preventDefault();
-
   nameField.textContent = nameInput.value;
   jobField.textContent = jobInput.value;
-
-	// Выберите элементы, куда должны быть вставлены значения полей
-
-	// Вставьте новые значения с помощью textContent
 }
 
-// Прикрепляем обработчик к форме:
-// он будет следить за событием “submit” - «отправка»
 formElement.addEventListener('submit', formSubmitHandler);
-popupSaveButton.addEventListener("click", closePopup);
-
-let saveForm = document.querySelector(".popup__submit-button");
-saveForm.addEventListener("click", popupClose);
+popupSaveButton.addEventListener("click", popupClose);
