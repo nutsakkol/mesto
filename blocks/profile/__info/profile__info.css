@@ -8,3 +8,9 @@
   "subtitle subtitle";
   padding: 22px 0 25px 30px;
 }
+
+@media screen and (max-width: 767px) {
+  .profile__info {
+    padding: 26px 0px 36px 0;
+  }
+}

@@ -2,3 +2,10 @@
   max-width: 22px;
   padding: 14px 64px;
 }
+
+@media screen and (max-width: 767px) {
+  .profile__add-icon {
+    max-width: 16px;
+    padding: 17px;
+  }
+}
