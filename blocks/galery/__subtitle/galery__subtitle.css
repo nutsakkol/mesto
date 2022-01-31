@@ -1,6 +1,8 @@
 .galery__subtitle {
   display: flex;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 25px;
+  padding-left: 20px;
+  max-width: 242px;
 }

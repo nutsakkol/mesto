@@ -1,9 +1,12 @@
 .galery__like-button {
   border: none;
+  min-width: 22px;
+  min-height: 19px;
+  background-repeat: no-repeat;
   padding: 0;
-  max-height: 19px;
   cursor: pointer;
   background: none;
+  background-image: url(../../../images/like.svg);
 }
 
 .galery__like-button:hover {

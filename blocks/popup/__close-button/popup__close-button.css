@@ -5,6 +5,9 @@
   background: none;
   cursor: pointer;
   border: none;
+  background-image: url(../../../images/closeIcon.svg);
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .popup__close-button:hover {
@@ -14,6 +17,14 @@
 
 @media screen and (max-width: 767px) {
   .popup__close-button {
-    right: -5px;
+    min-width: 20px;
+    min-height: 20px;
+    right: 0px;
+    min-width: 20px;
+    min-height: 20px;
+    background-position: center;
+    background-size: contain;
+    padding: 0;
+    top: -35px;
   }
 }
