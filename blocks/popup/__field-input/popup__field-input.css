@@ -1,9 +1,9 @@
-.popup__name-field {
+.popup__field-input {
   width: 358px;
   padding: 0;
   padding-bottom: 9px;
   border: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -12,7 +12,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .popup__name-field {
+  .popup__field-input {
     width: 238px;
   }
 }
