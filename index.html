@@ -21,54 +21,14 @@
       <button type="button" class="profile__add-button"></button>
     </section>
     <section class="galery">
-      <div class="galery__element">
-        <img class="galery__image" src="./images/kirill-pershin-1088404-unsplash.png" alt="Замок в горах">
-        <div class="galery__subtitle">
-          <h2 class="galery__title">Карачаевск</h2>
-          <button type="button" class="galery__like-button"></button>
-        </div>
-      </div>
-      <div class="galery__element">
-        <img class="galery__image" src="./images/kirill-pershin-1404681-unsplash.png" alt="Эльбрус на горизонте">
-        <div class="galery__subtitle">
-          <h2 class="galery__title">Гора Эльбрус</h2>
-          <button type="button" class="galery__like-button"></button>
-        </div>
-      </div>
-      <div class="galery__element">
-        <img class="galery__image" src="./images/kirill-pershin-1556355-unsplash.png" alt="Заснеженные скалы Домбая">
-        <div class="galery__subtitle">
-          <h2 class="galery__title">Домбай</h2>
-          <button type="button" class="galery__like-button"></button>
-        </div>
-      </div>
-      <div class="galery__element">
-        <img class="galery__image" src="./images/lond.png" alt="Улица Лондона">
-        <div class="galery__subtitle">
-          <h2 class="galery__title">Лондон</h2>
-          <button type="button" class="galery__like-button"></button>
-        </div>
-      </div>
-      <div class="galery__element">
-        <img class="galery__image" src="./images/manh.png" alt="Ночной Манхэттен">
-        <div class="galery__subtitle">
-          <h2 class="galery__title">Нью-Йорк</h2>
-          <button type="button" class="galery__like-button"></button>
-        </div>
-      </div>
-      <div class="galery__element">
-        <img class="galery__image" src="./images/san.png" alt="Улица Сан-Франциско">
-        <div class="galery__subtitle">
-          <h2 class="galery__title">Сан-Франциско</h2>
-          <button type="button" class="galery__like-button"></button>
-        </div>
-      </div>
+      <ul class="galery__group">
+      </ul>
     </section>
   </main>
   <footer class="footer">
     <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
   </footer>
-  <section class="popup">
+  <section class="popup popup_type_edit-profile">
     <div class="popup__container">
       <button type="button" class="popup__close-button"></button>
       <form name="profile-info" class="popup__form">
@@ -79,6 +39,26 @@
       </form>
     </div>
   </section>
+  <section class="popup popup_type_add-card">
+    <div class="popup__container">
+      <button type="button" class="popup__close-button"></button>
+      <form name="profile-info" class="popup__form">
+        <h2 class="popup__title">Новое место</h2>
+        <input name="name-field" type="text" class="popup__input popup__input_value_name" value="" required placeholder="Название">
+        <input name="job-field" type="text" class="popup__input popup__input_value_job" value="" required placeholder="Ссылка на картинку">
+        <button type="submit" class="popup__submit-button">Сохранить</button>
+      </form>
+    </div>
+  </section>
+  <template class="galery__item">
+    <li class="galery__element">
+      <img class="galery__image" src="" alt="">
+      <div class="galery__subtitle">
+        <h2 class="galery__title"></h2>
+        <button type="button" class="galery__like-button"></button>
+      </div>
+    </li>
+  </template>
   <script src="./scripts/index.js"></script>
 </body>
 </html>
