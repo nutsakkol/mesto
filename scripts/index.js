@@ -15,6 +15,8 @@ const templateCard = document.querySelector('.galery__item').content;
 const titleInput = document.querySelector('.popup__input_value_title');
 const linkInput = document.querySelector('.popup__input_value_link');
 const formAddCard = document.querySelector('.popup__form_type_add-card');
+const viewPic = document.querySelector('.popup__pic-viewer');
+const viewPicSub = document.querySelector('.popup__pic-subtitle');
 const initialCards = [
   {
     name: 'Архыз',
@@ -60,7 +62,12 @@ function openAddCardPopup() {
   popupOpen(popupAddCard);
 }
 
-function openPicPopup() {
+function openPicPopup(item) {
+  console.dir(item);
+  console.dir(viewPic);
+  viewPic.src = item.target.src;
+  viewPic.alt = item.target.alt;
+  viewPicSub.textContent = item.target.alt;
   popupOpen(popupPicZoom);
 }
 
