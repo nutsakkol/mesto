@@ -63,8 +63,6 @@ function openAddCardPopup() {
 }
 
 function openPicPopup(item) {
-  console.dir(item);
-  console.dir(viewPic);
   viewPic.src = item.target.src;
   viewPic.alt = item.target.alt;
   viewPicSub.textContent = item.target.alt;
