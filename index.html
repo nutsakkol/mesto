@@ -31,10 +31,12 @@
   <section class="popup popup_type_edit-profile">
     <div class="popup__container">
       <button type="button" class="popup__close-button"></button>
-      <form name="profile-info" class="popup__form popup__form_type_edit-profile">
+      <form name="profile-info" class="popup__form popup__form_type_edit-profile" novalidate>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <input name="name-field" type="text" class="popup__input popup__input_value_name" value="Жак-Ив Кусто" required placeholder="Ваше имя">
-        <input name="job-field" type="text" class="popup__input popup__input_value_job" value="Исследователь океана" required placeholder="Ваш род деятельности">
+        <input id="username" name="name-field" type="text" class="popup__input popup__input_value_name" value="Жак-Ив Кусто" required placeholder="Имя" minlength="2" maxlength="40">
+        <span id="error-username" class="error-message"></span>
+        <input id="about" name="job-field" type="text" class="popup__input popup__input_value_job" value="Исследователь океана" required placeholder="О себе" minlength="2" maxlength="200">
+        <span id="error-about" class="popup__error_visible"></span>
         <button type="submit" class="popup__submit-button">Сохранить</button>
       </form>
     </div>
@@ -42,11 +44,13 @@
   <section class="popup popup_type_add-card">
     <div class="popup__container">
       <button type="button" class="popup__close-button"></button>
-      <form name="profile-info" class="popup__form popup__form_type_add-card">
+      <form name="profile-info" class="popup__form popup__form_type_add-card" novalidate>
         <h2 class="popup__title">Новое место</h2>
-        <input name="name-field" type="text" class="popup__input popup__input_value_title" value="" required placeholder="Название">
-        <input name="job-field" type="text" class="popup__input popup__input_value_link" value="" required placeholder="Ссылка на картинку">
-        <button type="submit" class="popup__submit-button">Сохранить</button>
+        <input id="placename" name="name-field" type="text" class="popup__input popup__input_value_title" required placeholder="Название" minlength="2" maxlength="30">
+        <span id="error-placename" class="error-message"></span>
+        <input id="link" name="job-field" type="url" class="popup__input popup__input_value_link" required placeholder="Ссылка на картинку">
+        <span id="error-link" class="popup__error_visible"></span>
+        <button type="submit" class="popup__submit-button">Создать</button>
       </form>
     </div>
   </section>
@@ -68,5 +72,6 @@
     </li>
   </template>
   <script src="./scripts/index.js"></script>
+  <script src="./scripts/validate.js"></script>
 </body>
 </html>

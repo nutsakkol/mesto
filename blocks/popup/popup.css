@@ -12,9 +12,3 @@
   opacity: 0;
   transition: visibility 0.2s, opacity 0.5s linear;
 }
-
-@media screen and (max-width: 1439) {
-  .popup {
-    max-width: 1024px;
-  }
-}

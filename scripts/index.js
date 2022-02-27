@@ -129,6 +129,22 @@ popupCloseButtons.forEach( btn => {
   })
 });
 
+document.addEventListener('keydown', (evt) => {
+  if (evt.key === 'Escape') {
+    closePopup(popupAddCard);
+    closePopup(popupPicZoom);
+    closePopup(popupEditProfile);
+  }
+});
+
+document.addEventListener('click', (evt) => {
+  if (evt.target === popupAddCard || evt.target === popupPicZoom || evt.target === popupEditProfile) {
+    closePopup(popupAddCard);
+    closePopup(popupPicZoom);
+    closePopup(popupEditProfile);
+  }
+});
+
 formElement.addEventListener('submit', submitHandlerForm);
 profileEditButton.addEventListener('click', openEditProfilePopup);
 addCardButton.addEventListener('click', openAddCardPopup);
